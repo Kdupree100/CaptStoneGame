@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" type="text/css"
+		th:href="@{https://cdn.jsdelivr.net/webjars/org.webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    
+    <!-- external css -->
+    <link rel="stylesheet" href="/css/index.css">
+    
+
+<title>Registration</title>
+</head>
+<body>
+ 			
+        Welcome <span sec:authentication="principal.username">User</span>
+     </p>
+   <!-- header -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-black d-flex">
+            <div class="dice">
+               <a href="/html/index.html" class="thumbnail navbar-brand logo ">
+                    <img
+                    src=
+                    "/img/png1/dice.png"
+                    style="height: 50px; width: 50px"
+                    />
+                </a>
+                
+            </div>
+          
+            <div class="container justify-content-center position-absolute">
+                
+                
+               
+                <h1 class="mt"><center>LayitonTheFloor</center></h1>
+
+            </div>
+           
+        </nav>
+    </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-black d-flex d-sm-none  d-md-block d-none d-md-block py-0">
+            
+            
+            
+            <div class="container d-block ">
+                <div class="row">
+                    <div class="col-md-3 text-center text-white py-2 ">
+                        <a href="/Home/GambleGames" class="">  <span class="mt-n3">About</span></a>
+                    </div>
+                    <div class="col-md-3 text-center text-white py-2"> 
+                        <a href="#" class=""><span>Bet</span></a>
+                    </div>
+                    <div class="col-md-3 text-center text-white py-2">
+                        <a href="/Home/" class=""><span>Coming Soon!</span></a>
+                    </div>
+                    <div class="col-md-3 text-center text-white py-2">
+                        <a href="/Home/GambleGames" class="">  <span>Games</span></a>
+                      
+                    </div>
+                </div>
+                </div>
+            
+   
+        </nav>
+    </div>
+
+
+    <!-- showcase -->
+    <section class = "text-center">
+        <div class="container" >
+            <div class="d-sm-flex align-items-center"> 
+                <div class="">
+                   
+                   
+                    <h1 class="my-4">
+                        When you come to the G.O.A.T. its always a Bet!
+                    </h1>
+                 
+                    <a href="/Home/GambleGames"> <button class="btn btn-outline-danger btn-lg">Lets Play</button></a>
+                </div>
+                <img class="img-fluid w-50 d-none d-md-block"  src="" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="p-5 text-center">
+        <div class="container bg-light">
+            <h2 class="my-4 pt-4 " id="newReleasesHeader">New Releases</h2>
+            
+            <div class="row">
+              
+                <div class="col-md" th:each="sneaker, stat: ${sneaker}" th:if="${stat.count < 5}">
+                    <a href="/html/product1.html">
+                        <div class="card bg-white text-dark ">
+                        
+                            <img class="img-fluid " th:src="@{${sneaker.image}}" alt="Promo of product X">
+                        </div>
+                    </a>
+                    
+                    <h4 th:text="${sneaker.name}"/>
+                  
+                    <h4 th:text="${sneaker.marketvalue}"/>
+                    
+                </div>
+                    
+            </div>
+        </div>
+    </section>
+
+ 
+  </div>
+  <section class="p-5 text-center">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-around">
+                <h1 class="display-1 px-3">
+                    <u>Nonstop 4ever Bets! </u>
+                </h1>
+                
+
+  <script type="text/javascript"
+		th:src="@{https://cdn.jsdelivr.net/webjars/org.webjars/jquery/3.2.1/jquery.min.js/}"></script>
+	<script type="text/javascript"
+		th:src="@{https://cdn.jsdelivr.net/webjars/org.webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+
+
+body {
+	background: rgb(150,144,144);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+}
+
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,green), 0 0 6px rgba(0,0,0,.07);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 0px;
+  cursor: pointer;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 10px 20px rgba(246, 47, 47, 0.853), 0 4px 8px rgba(68, 20, 20, 0.06);
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+a:hover{
+  color:red;
+}
+
+/* colorpallete */
+.first-color { 
+	background: #f7f7f7; 
+}
+
+/* actoin */
+.second-color { 
+	background: #3b0944; 
+}
+
+.third-color { 
+	background: #5f1854; 
+}
+
+
+.fourth-color { 
+	background: #1abb9c; 
+}
+.d-none d-md-block{
+ background: purple;
+
+	}
+	.d-md-none{
+	background: purple;
+	
+	}
+	
+	
+
+

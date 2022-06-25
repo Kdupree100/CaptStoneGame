@@ -1,0 +1,90 @@
+button.btn{
+	background-color: white;
+	border: 5px;
+	color: black;
+	padding:14 px 45px;
+	text-align: center;
+	font-size: 4px 2px;
+	margin: 4px 2px;
+	*transition:0.3;
+	
+}
+button#btndraw{
+	position: fized;
+	top: 8px;
+	left: 7px;
+}
+table{
+	border-collapse: collapse;
+	color: black;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+	th{
+	background-color: gray;
+	}
+	table, th, td,tr{
+	padding: 10px;
+	color:black;
+	border: 3px solid black;
+	text-align: center;
+	}
+	td.datanumber{
+	background-color: White;
+	font-family: fantasy;
+	font-size: 40px;
+	}
+	td.ball-data{
+	background-color:White;
+	font-family: fantasy;
+	font-size: 40px;
+	padding: 2px;
+	}
+	
+	input{
+	font-size: 30px;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 15px;
+	}
+body{
+	font-family: manjari;
+	font-size: 20px;
+	background-color: rgb(203, 189, 189);
+    /* background-image: linear-gradient(rgb(29,79,142), rgb(0,58,106)); */
+}
+#title{
+	font-size: 100px;
+	text-align: center;
+	height: 15px;
+}
+
+table#table-balls{
+	background-color: White;
+	
+	font-family: fantasy;
+	font-size:20px;
+	border:1 px solid white;
+	padding: 5px;
+	
+}
+button:hover{
+	background-color: gray;
+	color: #ffff99;
+	border-button: 3px solid white;
+	cursor: pointer;
+}
+button{
+	border: none;
+	border-radius: 4px;
+	width: 10;
+	padding: 10px 20px;
+}
+.pdrawBall {
+	font-size: 60px;
+}
+.free{
+	background-color: red;
+}
+
+

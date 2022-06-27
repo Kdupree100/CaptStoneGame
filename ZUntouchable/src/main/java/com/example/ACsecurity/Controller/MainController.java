@@ -3,6 +3,7 @@ package com.example.ACsecurity.Controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
@@ -18,8 +19,8 @@ public class MainController {
         return "login";
     }
 
-    @GetMapping("/user")
+    @RequestMapping("/user")
     public String userIndex() {
-        return "user/index";
+        return "cart_view";
     }
 }

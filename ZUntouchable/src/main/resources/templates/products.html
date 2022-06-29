@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html lang="en"
+ xmlns="http://www.w3.org/1999/xhtml"
     xmlns:th="http://www.thymeleaf.org"
 xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:replace="/fragments/head"></head>
@@ -14,7 +14,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 			<div class="col"></div>
 			<div class="col-8">
 
-				<h2 class="display-3 mb-5" th:text="${categoryName} ?: 'All products'"></h2>
+				<h2 class="display-3 mb-5" th:text="${categoryName} ?: 'All Memberships!'"></h2>
 
 				<div class="row">
 
@@ -31,7 +31,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 						<div style="position:relative;">
 							<p>
 								<a class="btn btn-primary addToCart" th:attr="data-id=${product.id}"
-									th:href="@{'/cart/add/' + ${product.id}}"> Add to cart</a>
+									th:href="@{'/cart/add/' + ${product.id}}"> Add to Subscription</a>
 								<img class="ajaxLoader d-none" src="/images/ajax-loader.gif">
 							</p>
 

@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <!-- external css -->
     <link rel="stylesheet" href="/css/GambleGames.css">
+     
 </head>
 <body>
+
      <!-- header -->
     
      <div class="container">
@@ -24,10 +26,13 @@
                 <a href="index.html" class="thumbnail navbar-brand logo">
                     <img
                     src=
-                    ""
+                    "/img/png1/dice-5.svg"
                     style="height: 60px; width: 60px"
                     />
                 </a>
+                 <li class="nav-item active">
+                <a th:href="@{/login}" class="nav-link">Log-out</a>
+            </li>
             </div>
            
             <div class="d-md-none">
@@ -50,17 +55,11 @@
                 <a href="#" class="thumbnail navbar-brand logo">
                     <img
                     src=
-                    ""
+                    "/img/png1/dice.png"
                     style="height: 40px; width: 40px"
                     />
                 </a>
-                <a href="#" class="thumbnail navbar-brand logo">
-                    <img
-                    src=
-                    ""
-                    style="height: 40px; width: 40px"
-                    />
-                </a>
+               
             </div>
             
         </nav>
@@ -74,18 +73,18 @@
             <div class="container d-block">
                 <div class="row">
                     <div class="col-md-3 text-center text-white py-2">
-                        <a href="gallery.html" class=""> <span>About</span></a>
+                        <a href="/Home/About" class=""> <span>About</span></a>
                     </div>
                     <div class="col-md-3 text-center text-white py-2">
-                        <a href="#" class=""><span>Rules</span></a>
+                        <a href="/Home/Rules" class=""><span>Rules</span></a>
                     </div>
                     <div class="col-md-3 text-center text-white py-2">
-                        <a href="#" class="">
+                        <a href="http://localhost:8080/category/all" class="">
                             <span>Membership</span>
                         </a>
                     </div>
                     <div class="col-md-3 text-center text-white py-2">
-                        <a href="#" class="">
+                        <a href="/Home/GambleGames" class="">
                             <span>G.O.A.T.</span>
                         </a>
                     </div>
@@ -117,9 +116,9 @@
                             <a class="dropdown-item" href="#">HotPick!</a>
                             <a class="dropdown-item" href="#">Game On!</a>
                           <a class="dropdown-item" href="#">Showtime!</a>
-                          <a class="dropdown-item" href="#">Pick a Pair!</a>
-                          <a class="dropdown-item" href="#">Try me Out!</a>
-                          <a class="dropdown-item" href="#">Invest in Me!</a>
+                          <a class="dropdown-item" href="#">Jets(coming soon!)</a>
+                          <a class="dropdown-item" href="#">Casino Online(coming soon!)</a>
+                          <a class="dropdown-item" href="#">Sports Betting(coming soon!)</a>
                          </ul>
 
                     </div>
@@ -178,24 +177,24 @@
                 <div class="col-md">
                     <a href="GambleGame.html">
                         <div class="card bg-white text-dark">
-                            <img class="img-fluid" src="" alt="Coming Soon">
+                            <img class="img-fluid" src="/img/png1/Jets.png" alt="Coming Soon">
                         </div>
                     </a>
-                    <h4 class="pt-4">Pick a Pair!</h4>
+                    <h4 class="pt-4">Jets!</h4>
                     <h4>$0 - $1000 USD</h4>
                 </div>
                 <div class="col-md">
                     <div class="card bg-white text-dark">
-                        <img class="img-fluid " src="" alt="Coming Soon">
+                        <img class="img-fluid " src="/img/png1/OC.png" style="height: 275px; width: 550px" alt="Coming Soon">
                     </div>
-                    <h4 class="pt-4">Try me Out!</h4>
+                    <h4 class="pt-4">Casino Online!</h4>
                     <h4>$0 - $1000 USD</h4>
                 </div>
                 <div class="col-md">
                     <div class="card bg-white text-dark">
-                        <img class="img-fluid" src="" alt="Coming Soon">
+                        <img class="img-fluid" src="/img/png1/SB.png" style="height: 275px; width: 550px" alt="Coming Soon">
                     </div>
-                    <h4 class="pt-4">Invest in me!</h4>
+                    <h4 class="pt-4">Sports Betting!</h4>
                     <h4>$0 - $1000 USD</h4>
                 </div>   
             </div>
@@ -226,33 +225,39 @@
                 <thead >
                   <tr>
                     <th scope="row">11</th>
-                    <td>Nascrash</td>
+                    <td>Snake</td>
                     <td>$30</td>
-                    <td>5-1</td>
+                    <td>Odds: 2-1</td>
                   </tr>
                   <tr>
                     <th scope="row">12</th>
-                    <td>Pong</td>
+                    <td>HangMan</td>
                     <td>$30</td>
-                    <td>2-1</td>
+                    <td>Odds: 5-1</td>
                   </tr>
                   <tr>
                     <th scope="row">13</th>
-                    <td>Jets</td>
+                    <td>Jets(coming soon!)</td>
                     <td>$15</td>
-                    <td>2-1</td>
+                    <td>Odds: 2-1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">13</th>
+                    <td>Casino Online(coming soon!)</td>
+                    <td>$15</td>
+                    <td>Odds: 2-1</td>
                   </tr>
                   <tr>
                     <th scope="row">14</th>
-                    <td>Tic Tac Toe</td>
+                    <td>Sports Betting(coming soon!)</td>
                     <td>$25</td>
-                    <td>3-1</td>
+                    <td>Odds Vary</td>
                   </tr>
                   <tr>
                     <th scope="row">15</th>
                     <td>Bingo</td>
                     <td>$50</td>
-                    <td>Odds 4-1</td>
+                    <td>Odds: 4-1</td>
                   </tr>
                 </tbody>
               </table>
@@ -269,5 +274,6 @@
 
     <script src="/js/GambleGame.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   
 </body>
 </html>

@@ -4,7 +4,7 @@
     xmlns:th="http://www.thymeleaf.org"
 xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" th:fragment="nav-front">
-    <a class="navbar-brand" href="/">Shopping cart</a>
+    <a class="navbar-brand" href="/">Subcription Cart</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
         <ul class="float-right navbar-nav" th:if="${principal == null}">
             <li class="nav-item active">
-                <a th:href="@{/register}" class="nav-link">.</a>
+                <a th:href="@{/register}" class="nav-link"></a>
             </li>
             <li class="nav-item active">
                 <a th:href="@{/login}" class="nav-link">Log-out</a>
@@ -33,7 +33,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 </nav>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" th:fragment="nav-admin">
-    <a class="navbar-brand" href="/" target="_blank">Admin shopping shopping</a>
+    <a class="navbar-brand" href="/" target="_blank">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/admin/pages">Pages</a>
+                <a class="nav-link" href="/admin/pages"> New Games</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="/admin/categories">Categories</a>

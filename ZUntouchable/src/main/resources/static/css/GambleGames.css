@@ -30,12 +30,12 @@ a:hover{
   color:red;
 }
 
-/* colorpallete */
+/* color pallete */
 .first-color { 
 	background: #f7f7f7; 
 }
 
-/* actoin */
+/* action */
 .second-color { 
 	background: #3b0944; 
 }
@@ -57,6 +57,8 @@ a:hover{
 	
 	}
 	
+.img-fluid
+{
 	
-
-
+	border-radius: 30px;
+}

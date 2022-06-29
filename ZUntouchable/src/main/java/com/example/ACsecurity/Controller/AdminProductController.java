@@ -49,13 +49,13 @@ public class AdminProductController {
 	        Page<Product> products = productRepo.findAll(pageable);
 	        List<Category> categories = categoryRepo.findAll();
 
-	        HashMap<Integer, String> cats = new HashMap<>();
-	        for (Category cat : categories) {
-	            cats.put(cat.getId(), cat.getName());
+	        HashMap<Integer, String> memberships = new HashMap<>();
+	        for (Category membership : categories) {
+	            memberships.put(membership.getId(), membership.getName());
 	        }
 
 	        model.addAttribute("products", products);
-	        model.addAttribute("cats", cats);
+	        model.addAttribute("cats", memberships);
 
 	        long count = productRepo.count();
 	        double pageCount = Math.ceil((double)count / (double)perPage);
@@ -94,7 +94,7 @@ public class AdminProductController {
 		boolean fileOk = false;
 		byte[] bytes = file.getBytes();
 		String filename = file.getOriginalFilename();
-		Path path = Paths.get("src/main/resources/static/media/" + filename);
+		Path path = Paths.get("src/main/resources/static/" + filename);
 		if(filename.endsWith("jpg")|| filename.endsWith("png")) {
 			
 			fileOk = true;
@@ -165,7 +165,7 @@ public class AdminProductController {
 		boolean fileOk = false;
 		byte[] bytes = file.getBytes();
 		String filename = file.getOriginalFilename();
-		Path path = Paths.get("src/main/resources/static/media/" + filename);
+		Path path = Paths.get("src/main/resources/static/" + filename);
 		
 		if(!file.isEmpty()) {
 		if(filename.endsWith("jpg")|| filename.endsWith("png")) {
@@ -204,7 +204,7 @@ public class AdminProductController {
 			product.setSlug(slug);
 			
 			if(!file.isEmpty()) {
-				Path path2 = Paths.get("src/main/resources/static/media/" + currentProduct.getImage());
+				Path path2 = Paths.get("src/main/resources/static/" + currentProduct.getImage());
 			    Files.delete(path2);
 			    product.setImage(filename);
 			    Files.write(path, bytes);
@@ -228,7 +228,7 @@ public class AdminProductController {
 		
 		Product currentProduct = productRepo.getOne(product.getId());
 		
-		Path path2 = Paths.get("src/main/resources/static/media/" + currentProduct.getImage());
+		Path path2 = Paths.get("src/main/resources/static/" + currentProduct.getImage());
 	   
 		Files.delete(path2);
 		productRepo.deleteById(id);

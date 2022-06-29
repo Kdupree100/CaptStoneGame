@@ -23,7 +23,7 @@ function playGame()
 			var isEqual=checkNumbersIfEqual();
 			if(isEqual==true)
 			{
-				document.getElementById("warning").innerHTML="Well down!!!";
+				document.getElementById("warning").innerHTML="Well done!!!";
 				$("#warning").css("fontWeight","bold").css("fontSize","100%").css("color","green").show();
 				if(times > 0)
 				{
@@ -268,16 +268,16 @@ function checkPanel()
 				c++;
 		}
 	}
-	if(a==24 || b==24 || c==24)
+	if(a==6 || b==6 || c==6)
 	{
-		finalResult.innerHTML="Congratulations, you win!<br/>You can get 50 money.";
+		finalResult.innerHTML="Congratulations, you win!<br/>You can get 50 dollars.";
 		currentMoney+=50;
 		getCurrentMoney();
 		$("#b2,#b3").attr("disabled","disabled");
 	}
 	else
 	{
-		finalResult.innerHTML="Sorry, but you lost.<br/>You will lose 50 money.";
+		finalResult.innerHTML="Sorry, but you lost.<br/>You will lose 50 Dollars.";
 		currentMoney-=50;
 		getCurrentMoney();
 		$("#b2,#b3").attr("disabled","disabled");

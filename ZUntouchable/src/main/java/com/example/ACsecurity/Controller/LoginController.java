@@ -33,5 +33,18 @@ public class LoginController {
        
        return "HangMan";
 }
+
+   @RequestMapping("/Rules")
+   public String showRules() {
+       
+       return "Rules";
    
+}
+
+   @RequestMapping("/About")
+   public String showAbout() {
+       
+       return "About";
+   
+}
 }

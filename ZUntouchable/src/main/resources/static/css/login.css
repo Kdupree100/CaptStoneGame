@@ -7,16 +7,17 @@
 
 body{
  
-     background:  blue;
-   
+  
+   	 background-image: url("https://ae01.alicdn.com/kf/HTB1rVZDayfrK1RjSspbq6A4pFXaG/Paparazzi-Hollywood-city-skyline-vip-red-carpet-tree-full-moon-backdrops-Computer-print-party-backgrounds.jpg_Q90.jpg_.webp")
    
     
 }
 
 
 .row{
-    background-color: white;
+    background-color: #0000a0;
     border-radius: 30px;
+    color: white;
 }
 
 img {

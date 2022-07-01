@@ -47,4 +47,9 @@ public class LoginController {
        return "About";
    
 }
+   @RequestMapping("/Bingo75.html")
+   public String showBingo() {
+       
+       return "Bingo75";
+}
 }

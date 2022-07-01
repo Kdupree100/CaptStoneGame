@@ -158,7 +158,7 @@ function generateNumbersInBlock()
 function getCurrentMoney()
 {
 	document.getElementById("money").innerHTML=
-			"Your current money is: "+'<span id="span1">'+currentMoney+'</span>';
+			"Your current amount is: "+'<span id="span1">'+currentMoney+'</span>';
 	$("#money").css("fontWeight","bold");
 }
 
@@ -211,14 +211,14 @@ function checkLine()
 	}
 	if(isWin)
 	{
-		finalResult.innerHTML="Congratulations, you win!<br/>You can get 50 money.";
+		finalResult.innerHTML="Congratulations, you win!<br/>You can get 50 dollars.";
 		currentMoney+=50;
 		getCurrentMoney();
 		$("#b2,#b3").attr("disabled","disabled");
 	}
 	else
 	{
-		finalResult.innerHTML="Sorry, but you lost.<br/>You will lose 50 money.";
+		finalResult.innerHTML="Sorry, but you lost.<br/>You will lose 50 dollars.";
 		round=2;
 		currentMoney-=50;
 		getCurrentMoney();
@@ -232,7 +232,7 @@ function checkLine()
 function playRound2()
 {
 	round=2;
-	times=parseInt(Math.random()*5+40);
+	times=parseInt(Math.random()*5+80);
 	getRules();
 }
 
@@ -268,7 +268,7 @@ function checkPanel()
 				c++;
 		}
 	}
-	if(a==6 || b==6 || c==6)
+	if(a==5 || b==5 || c==5)
 	{
 		finalResult.innerHTML="Congratulations, you win!<br/>You can get 50 dollars.";
 		currentMoney+=50;

@@ -56,21 +56,21 @@
             <div class="container d-block ">
                 <div class="row">
                     <div class="col-md-3 text-center text-white py-2 ">
-                        <a href="/Home/About" class="">  <span class="mt-n3">About</span></a>
+                        	<a href="/Home/About" class="">  <span class="mt-n3"><center>About</center></span></a>
                     </div>
                     <div class="col-md-3 text-center text-white py-2"> 
                         <a href="category/all" class=""><span>Memberships</span></a>
                     </div>
-                    <div class="col-md-3 text-center text-white py-2">
-                        <a href="admin/products" class=""><span>Admin</span></a>
-                    </div>
-                    <div class="col-md-3 text-center text-white py-2">
+                   	<div class="col-md-3 text-center text-white py-2">
                         <a href="/Home/GambleGames" class="">  <span>Games</span></a>
-                        
+                    <div class="col-md-3 text-center text-white py-2">
+                        <a href="admin/products" class=""sec:authorize="hasRole('ROLE_SUPER')"><span>Admin</span></a>
+                    </div>
                       
                     </div>
                 </div>
                 </div>
+             
             
    
         </nav>
@@ -96,21 +96,11 @@
     </section>
     <section class="p-5 text-center">
         <div class="container bg-light">
-            <h2 class="my-4 pt-4 " id="newReleasesHeader">New Releases</h2>
+            <h2 class="my-4 pt-4 " id="newReleasesHeader">New Edition!</h2>
             
             <div class="row">
               
-                <div class="col-md" th:each="sneaker, stat: ${sneaker}" th:if="${stat.count < 5}">
-                    <a href="/html/product1.html">
-                        <div class="card bg-white text-dark ">
-                        
-                            <img class="img-fluid " th:src="@{${sneaker.image}}" alt="Promo of product X">
-                        </div>
-                    </a>
-                    
-                    <h4 th:text="${sneaker.name}"/>
-                  
-                    <h4 th:text="${sneaker.marketvalue}"/>
+                 <img class="img-Roulette" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydT3JppSu8oUeLyLMEqN5_ngoRTwiGM9v9A&usqp=CAU" alt="">
                     
                 </div>
                     
@@ -135,6 +125,7 @@
 	<li class="nav-item active">
                 <a th:href="@{/login}" class="nav-link">Log-out</a>
             </li>
+           
 </body>
 </html>
 

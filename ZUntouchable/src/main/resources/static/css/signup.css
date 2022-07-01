@@ -8,15 +8,20 @@
 
 body{
  
+     background-color: purple;
     
-    background: blue;
+    
+  
 
 }
 
 
 .row{
-    background-color: rgb(192, 192, 192);
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR7YafecxJvHrtBdnkNwB9MVaHRjWdnzUMgQ&usqp=CAU");
+    background-size: 7in;
     border-radius: 30px;
+    color: #ffffff;
+    
 }
 
 img {

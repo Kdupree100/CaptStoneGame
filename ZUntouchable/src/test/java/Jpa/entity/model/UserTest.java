@@ -12,9 +12,9 @@ public class UserTest {
 	@Test
     public void testgetmail() {
     User user = new User();
-    user.setEmail("signup@gmail.com");
+    user.setEmail("admin@gmail.com");
 
-  //assertEquals("signup@gmail.com", user.getEmail());
-  assertEquals("fhdjgr@yellowbook.com", user.getEmail());
+  //assertEquals("admin@gmail.com", user.getEmail());
+    assertEquals("fhdjgr@yellowbook.com", user.getEmail());
 }
 }

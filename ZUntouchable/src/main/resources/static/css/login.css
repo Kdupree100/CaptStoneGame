@@ -15,6 +15,9 @@ body{
 
 
 .row{
+	
+	width: 60%;
+	
     background-color: #0000a0;
     border-radius: 30px;
     color: white;

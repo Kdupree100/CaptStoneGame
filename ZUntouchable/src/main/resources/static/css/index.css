@@ -46,6 +46,10 @@ body {
 			opacity: 1;
 			transform: rotate($rotate * 1.5) translate3d(random(1000) * 1px, random(1000) * 1px,1000px) scale(1);
 		}
+		.row
+		{
+		text-size: 100px;
+		}
 	}
 }
 
